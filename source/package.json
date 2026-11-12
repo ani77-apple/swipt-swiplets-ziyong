@@ -1,6 +1,6 @@
 {
   "name": "skip-chinese-ads-plus",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "swiplet": {
     "id": "skip-chinese-ads-plus",
@@ -63,7 +63,7 @@
     },
     "app": "./src/App.tsx",
     "extension": "./src/extension.ts",
-    "versionCode": 1001
+    "versionCode": 1002
   },
   "scripts": {
     "build": "swipt project build",

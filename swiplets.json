@@ -55,8 +55,8 @@
         "zh-Hant": "跳過廣告 Plus",
         "zh-Hant-HK": "跳過廣告"
       },
-      "version": "0.2.0",
-      "versionCode": 1001,
+      "version": "0.2.1",
+      "versionCode": 1002,
       "icon": {
         "color": "red",
         "symbol": "forward.end.fill"
@@ -75,8 +75,8 @@
         }
       ],
       "url": "skip-chinese-ads-plus.swiplet",
-      "size": 160651,
-      "sha256": "2a7ebd25bc5b70bbd4011b3f829514c101a133d01a46c83718bde73d663ae6cc"
+      "size": 160802,
+      "sha256": "a06b2a0ebeec1d250b89ef3847a8aad4df6e08a48ac20a749dc632fb2d8b6013"
     }
   ]
 }

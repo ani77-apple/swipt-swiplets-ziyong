@@ -59,6 +59,14 @@ Swiplet 仓库源（**自用**）。
 5. **新增 `sdk.skipIdentifier`**
    百度网盘的跳过按钮 label 为空，只有 `identifier="skipButton"`。
 
+5b. **为 6 个「无类名」应用显式登记 App 条目**
+   B612 (`com.campmobile.snowcamera`)、德施曼 (`com.dessmann.XDHousekeeper`)、
+   多彩宝 (`cn.gogpay.dcb`)、一码贵州 (`com.gzdsy.onebuygz`)、
+   PICOOC (`com.picooc.picooc`)、NB Pro (`com.nbmaster.app`)。
+   **原因是踩过坑**：这 6 个不在官方表里，只能走「模糊跳转」分支，
+   而模糊分支必须先在设置里手动打开——新装的 swiplet 默认是**关**的，
+   于是这些 App 看上去「没被支持」。显式登记后它们不再依赖这个开关。
+
 ### 二、引擎（`source/extension.ts`）
 
 6. **通用兜底规则改为对所有 App 生效**

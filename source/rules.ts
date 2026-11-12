@@ -1043,6 +1043,15 @@ export const rules: Record<string, (Rule | Rule[])[]> = {
     { role: "button", label: /^跳过$/ },
     sdk.generic,
   ],
+  // ---- added locally: apps whose splash exposes no usable view class, so the
+  // upstream class-based table can never match. Listing them here also keeps
+  // them out of the fuzzy path, which needs the user to enable 模糊跳转 first.
+  "com.campmobile.snowcamera": [sdk.genericText],     // B612咔叽 "跳过 6"
+  "com.dessmann.XDHousekeeper": [sdk.generic],        // 德施曼 CSJSlpashSkipButton
+  "cn.gogpay.dcb": [sdk.genericText],                 // 多彩宝 UILabel 跳过
+  "com.gzdsy.onebuygz": [sdk.countdownClose, sdk.genericText], // 一码贵州 "4s后自动关闭"
+  "com.picooc.picooc": [sdk.genericText],             // PICOOC UILabel 跳过
+  "com.nbmaster.app": [sdk.genericText],              // NB Pro UILabel 跳过
   "com.wepie.wespy": [sdk.xhLaunchAd],
   "com.wifi.masterkey.lite": [
     skip(
